@@ -24,4 +24,4 @@ At Novas Software Solutions, we specialize in delivering cutting-edge solutions 
 
 ## Copyright
 
-© 2024 Novas Software Solutions. All rights reserved. Unauthorized use or distribution of the content is prohibited.
+© 2025 Novas Software Solutions. All rights reserved. Unauthorized use or distribution of the content is prohibited.
