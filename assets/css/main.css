@@ -332,11 +332,6 @@ a:hover {
     text-align: center;
   }
 
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
   .about-section {
     flex-direction: column;
     text-align: center;
