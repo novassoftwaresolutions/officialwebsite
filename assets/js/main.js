@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     preloader.style.display = 'none'; 
     mainContent.style.display = 'block'; 
-  }, 3000); 
+  }, 7000); 
 });
 
 // Add CSS for ripple effect
