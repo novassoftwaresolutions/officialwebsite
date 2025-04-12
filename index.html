@@ -3,35 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Novas Software Solutions</title>
+  <meta name="description"
+    content="Expert software solutions tailored to your business needs. Web development, mobile apps, and custom enterprise software.">
+  <link rel="icon" href="assets/img/logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Novas Software Solutions",
+    "url": "https://novassoftwaresolutions.github.io/officialwebsite/",
+    "logo": "https://www.novassoftware.com/assets/img/logo.ico",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+94-071-085-1890",
+      "contactType": "software service"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/novas-software-solutions",
+      "https://www.facebook.com/novassolutions",
+      "https://www.instagram.com/novas_software_solutions"
+    ]
+  }
+  </script>
 </head>
 
-<body style="background-image: url('assets/img/background.jpeg'); background-repeat: no-repeat; background-size: auto;">
+<body>
   <!-- Preloader -->
-  <div id="preloader">
-    <div class="spinner">Novas</div>
+  <div id="preloader" role="progressbar" aria-busy="true">
+    <div class="spinner" role="status">Novas</div>
   </div>
 
-  <div class="main-content" style="display: none;">
+  <div class="main-content" id="main-content">
     <!-- Hero Section -->
-    <header class="hero-section" style="background-image: url('assets/img/background.jpeg'); background-repeat: no-repeat; background-size: cover;">
+    <header class="hero-section"
+      style="background-image: url('assets/img/background.jpeg'); background-repeat: no-repeat; background-size: cover;">
       <h1>Novas</h1>
       <h2>Software Solutions</h2>
       <p>We're a community of creators, innovators, and dreamers</p>
-      <a class="btn" href="#Welcome">Get Started</a>
-      <div class="water-effect"></div>
+      <a href="#Contact" class="btn" role="button">Request Consultation</a>
+      <div class="water-effect" aria-hidden="true"></div>
     </header>
 
-    <main>
-      <section class="intro-section">
-        <h1 id="Welcome">Welcome to Novas Software Solutions</h1>
-        <p>We are a software development company that specializes in creating custom software solutions for businesses. Our goal is to provide our clients with high-quality software that meets their unique needs and helps them achieve their business goals.</p>
+    <main role="main">
+      <!-- Welcome Section -->
+      <section class="intro-section" aria-labelledby="welcome-heading">
+        <h2 id="Welcome">Welcome to Novas Software Solutions</h2>
+        <p>We create custom software solutions that drive business growth and innovation</p>
       </section>
-    
+
       <!-- About Section -->
       <section class="about-section">
         <div class="about-img">
@@ -43,64 +67,70 @@
         </div>
         <a class="btn2" href="#Services">Learn More</a>
       </section>
-    
+
       <!-- Services Section -->
-      <section class="services-section">
+      <section class="services-section" aria-labelledby="services-heading">
         <h2 id="Services">Our Services</h2>
         <div class="services-container">
           <div class="service">
-            <img src="assets/img/web-img.jpg" alt="Service Image">
+            <img src="assets/img/web-img.jpg" alt="Custom web development dashboard" loading="lazy">
             <h3>Web Development</h3>
-            <p>We create custom websites that are tailored to your business needs and goals.</p>
+            <p>High-performance websites built for scalability and security</p>
           </div>
           <div class="service">
-            <img src="assets/img/mobile-img.jpg" alt="Service Image">
+            <img src="assets/img/mobile-img.jpg" alt="Mobile app development process" loading="lazy">
             <h3>Mobile App Development</h3>
-            <p>We develop mobile apps that are user-friendly, intuitive, and engaging.</p>
+            <p>Native and cross-platform mobile applications</p>
           </div>
           <div class="service">
-            <img src="assets/img/software-img.jpg" alt="Service Image">
+            <img src="assets/img/software-img.jpg" alt="Enterprise software solution architecture" loading="lazy">
             <h3>Software Development</h3>
-            <p>We build custom software solutions that help businesses streamline their operations.</p>
+            <p>Custom business software solutions and integrations</p>
           </div>
         </div>
-        <a class="btn1" href="#Contact">Need Help?</a>
+        <a href="#Contact" class="btn1" role="button">Request Consultation</a>
       </section>
-    
+
       <!-- Contact Section -->
-      <section class="contact-section" id="Contact">
-        <h2>Contact Us</h2>
+      <section class="contact-section" id="Contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
         <div class="contact-container">
           <div class="contact-info">
-            <p>If you have any questions or would like to learn more about our services, please feel free to contact us. We would love to hear from you!</p>
-            <p>Email: <a href="mailto:infonovassoftwaresolutions@gmail.com">infonovassoftwaresolutions@gmail.com</a></p>
+            <p>Ready to transform your business with technology?</p>
+            <p>Email: <a
+                href="mailto:infonovassoftwaresolutions@gmail.com?subject=Project Inquiry">infonovassoftwaresolutions@gmail.com</a>
+            </p>
           </div>
         </div>
       </section>
     </main>
 
-    <div class="cookie-notice">
-      <p>
-        We use only essential cookies to ensure the basic functionality of our website.
-        No tracking or personal data is collected. 
-        <button class="cookie-btn">Got it</button>
-      </p>
+    <!-- Cookie Notice -->
+    <div class="cookie-notice" role="alert" aria-live="polite">
+      <p>We use only essential cookies to ensure website functionality</p>
+      <button class="cookie-btn" aria-label="Accept cookies">Got it</button>
     </div>
-  
 
-    <!-- Footer Section -->
-    <footer class="footer-section">
-      <p>Connect with us:</p>
-      <a href="https://www.linkedin.com/company/novas-software-solutions/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BQ7urvKwySU%2BuKgFG3%2Bn%2F8w%3D%3D">LinkedIn</a>
-      <a href="https://web.facebook.com/profile.php?id=61552610713675">Facebook</a>
-      <a href="https://www.instagram.com/novas_software_solutions/">Instagram</a>
-      <a href="https://www.tiktok.com/@novassoftwaresolutions?_t=ZS-8uvPTirZuNd&_r=1">Tiktok</a>
-      <a href="https://www.threads.net/@novas_software_solutions">Threads</a>
+    <!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+      <p>Follow us:</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/novas-software-solutions/" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="https://web.facebook.com/profile.php?id=61552610713675" aria-label="Facebook page">Facebook</a>
+        <a href="https://www.instagram.com/novas_software_solutions/" aria-label="Instagram profile">Instagram</a>
+        <a href="https://www.tiktok.com/@novassoftwaresolutions" aria-label="TikTok profile">TikTok</a>
+        <a href="https://www.threads.net/@novas_software_solutions" aria-label="Threads profile">Threads</a>
+      </div>
       <p>© 2025 Novas Software Solutions. All Rights Reserved.</p>
     </footer>
   </div>
 
   <script src="assets/js/main.js"></script>
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
 </body>
 
 </html>
