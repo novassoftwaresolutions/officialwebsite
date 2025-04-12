@@ -251,13 +251,14 @@ a:hover {
 }
 
 .service {
-  max-width: 300px;
+  max-width: 500px;
   margin: 20px;
   text-align: center;
 }
 
 .service img {
-  max-width: 100%;
+  width: 500px;
+  height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -305,6 +306,58 @@ a:hover {
   line-height: 1.6;
 }
 
+/* Cookie Notice */
+.cookie-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  max-width: 90%;
+}
+
+.cookie-notice p {
+  margin: 0;
+  padding-right: 15px;
+  line-height: 1.5;
+}
+
+.cookie-notice a {
+  color: #00f7ff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.cookie-notice a:hover {
+  color: #ffffff;
+}
+
+.cookie-btn {
+  background: #00f7ff;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cookie-btn:hover {
+  background: #ffffff;
+  color: #00f7ff;
+}
+
 /* Footer Section */
 .footer-section {
   background: #121212;
@@ -345,6 +398,10 @@ a:hover {
   .services-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .service img {
+    width: 400px;
   }
 }
 

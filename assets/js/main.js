@@ -61,3 +61,12 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieNotice = document.querySelector('.cookie-notice');
+  const cookieBtn = document.querySelector('.cookie-btn');
+
+  cookieBtn.addEventListener('click', () => {
+    cookieNotice.style.display = 'none'; // Hide the cookie notice
+  });
+});
